@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+
+body {
+    background-color: black;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cabecalho-menu-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.cabecalho-menu-item:hover {
+    box-shadow: 3px 1px 17px 1px #ff000090;
+}
+
+footer p {
+    text-align: center;
+}
+
+.banner-black-friday {
+    width: 500px;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form {
+    /* centralizando o form na página */
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-form-item {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 1px 17px 1px #ff000060;
+}
+
+.container-form-item h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.label-form input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #9e0d0daf;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    min-width: 180px;
+    font-size: 18px;
+    border-radius: 0;
+}
+
+button {
+    background-color: transparent;
+    border-color: #c40c0c;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.centralizar-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+#mensagem {
+    text-align: center;
+    font-size: 20px;
+    color: #ff0000;
+
+    padding: 10px;
+    display: none;
+}
+
+.rodape-lista-midias-sociais {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.rodape-item-midias-sociais {
+    width: 50px;
+    margin: 0 .25em;
+}
+
+.patrocinadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 10px 10px;
+
+
+}
+
+.patrocinadores-item {
+    width: 200px;
+}
+
+
+/* tela até 820 */
+@media (max-width: 860px) {
+    .imagem {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .banner-black-friday {
+        width: 300px;
+    }
+
+}
+
+/* tela até 620 */
+@media (max-width: 620px) {
+    .imagem {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .banner-black-friday {
+        width: 200px;
+    }
+}
+
+/* tela até 420 */
+@media (max-width: 420px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 15px;
+        font-weight: 800;
+        margin: 10px;
+    }
+
+    .cabecalho-menu {
+        display: flex;
+        justify-content: center;
+        padding: 1px;
+    }
+
+    .cabecalho-menu-item {
+        margin: 2px;
+        text-align: center;
+        padding: 4px;
+    }
+
+    .banner-black-friday {
+        width: 300px;
+    }
+
+    .imagem {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

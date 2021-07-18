@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desafio #1: Ecommerce - Como colocar uma loja online">
+    <meta name="author" content="Djonny Nogueira Rosa">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Black Friday</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <!-- logo da empresa -->
+        <a href="index.html">
+            <img class="cabecalho-logo" src="img/LOJAS DC (1).png" alt="Lojas Dc"
+                title="Ir para a página inicial da Lojas Dc">
+        </a>
+        <nav>
+            <ul class="cabecalho-menu">
+                <li class="cabecalho-menu-item"><a href="#">Sobre </a></li>
+                <li class="cabecalho-menu-item"><a href="#">Promoções Hoje </a></li>
+                <li class="cabecalho-menu-item"><a href="#">Home </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="imagem">
+            <img src="img/black-friday-2901748_1280.png" alt="banner black-friday" class="banner-black-friday">
+            <img src="img/samsung-electronics.png" alt="banner black-friday" class="banner-black-friday">
+        </section>
+
+        <section class="container-form">
+            <div class="container-form-item">
+                <h1>Receba todas as promoções da nossa Black-Friday:</h1>
+
+                <!-- mostrar a mensagem de cadastro realizado com sucesso -->
+                <div id="mensagem"></div>
+
+                <div class="label-form">
+                    <!-- <label for="nomeId">Nome:</label> -->
+                    <input type="text" name="nome" id="nomeId" placeholder="Nome">
+                </div>
+                <div class="label-form">
+                    <!-- <label for="emailId">E-mail:</label> -->
+                    <input type="email" name="email" id="emailId" placeholder="Digite seu melhor e-mail">
+                </div>
+
+                <div class="centralizar-button">
+                    <button type="button" class="enviar" onclick="salvarForm()">Quero me cadastrar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Conteúdo do footer -->
+        <section class="rodape">
+
+            <ul class="rodape-lista-midias-sociais">
+                <!-- <div class="rodape__icones"> -->
+                <li class="rodape-item-midias-sociais">
+                    <a href="#"> <img src="img/footer-icone-facebook.svg" alt="Link para o Facebook"> </a>
+                </li>
+                <li class="rodape-item-midias-sociais">
+                    <a href="#"> <img src="img/footer-icone-youtube.svg" alt="Link para o Youtybe"></a>
+                </li>
+                <li class="rodape-item-midias-sociais">
+                    <a href="#"><img src="img/footer-icone-instagram.svg" alt="Link para o Instagram"></a>
+                </li>
+                <!-- </div> -->
+            </ul>
+        </section>
+
+        <p> Desafio #1 - Hiring Coders | 2021</p><br>
+
+        <section class="patrocinadores">
+            <img class="patrocinadores-item" src="img/gama-academy.svg" alt="Gama Academy" class="gama-academy">
+            <img class="patrocinadores-item" src="img/hiring-coders.png" alt="Hiring Coders" class="hiring-coders">
+            <img class="patrocinadores-item" src="img/logo-vtex.png" alt="Vtex" class="vtex">
+        </section>
+    </footer>
+    <!-- chamando o javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
